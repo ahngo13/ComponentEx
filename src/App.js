@@ -14,6 +14,7 @@ const App = () => {
             <Text style={{fontSize:30, marginBottom: 10}}>Button Component</Text>
             <Button title="Button" onPress={()=> alert('Click !!!')}/>
             <MyButton title="My Button">Children</MyButton>
+            <MyButton/>
         </View>
     );
 };
