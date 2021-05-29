@@ -14,13 +14,13 @@ const MyButton = (props) => {
             margin: 10,
             borderRadius: 8,
         }}
-        onPress={()=> {alert('hihihi')}}>
-            <Text style={{color: 'white', fontSize: 24}}>{props.title} {props.children}</Text>
+        >
+            <Text style={{color: 'white', fontSize: 24}} onPress={props.onPress}>{props.title}</Text>
         </Pressable>
     );
 };
 
-//빈값이 들엉왔을 때 기본값 세팅
+//빈값이 들어왔을 때 기본값 세팅
 MyButton.defaultProps = {
     title: 'Button',
 }
